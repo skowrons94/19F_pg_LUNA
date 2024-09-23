@@ -1,0 +1,19 @@
+// Level data for 19F(p,g)20Ne
+//
+// Data from NNDC
+//
+
+State 13414
+  1633
+100
+
+State 4967
+  0
+100
+
+State 1633
+  0
+100
+
+State 0
+end

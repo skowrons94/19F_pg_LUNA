@@ -1,0 +1,34 @@
+# Macro file for G4BL2
+# 
+# run with G4BL2 -m exampleGammaDecayScheme.mac
+#
+# Change the default number of workers (in multi-threading mode) 
+/run/numberOfThreads 4
+#
+
+# Add Geometry
+
+/Geometry/add BeamLine
+/Geometry/add TargetChamberO17
+/Geometry/add TargetHolder
+
+/Geometry/add BGODetector
+
+/Geometry/add LeadShielding
+/Geometry/LeadShielding/setup BGO
+
+# Initialize kernel
+/run/initialize
+
+# Set output file name
+/run/setFileName 19f_7116
+
+# Select Primary Generator (GammaDecayScheme)
+/PrimaryGenerator/select GammaDecayScheme
+/PrimaryGenerator/GammaDecayScheme/position 2 2 3.0000 mm
+/PrimaryGenerator/GammaDecayScheme/levelFile ./data/16O.txt
+/PrimaryGenerator/GammaDecayScheme/excitedState 7116 keV
+
+# Run
+/run/printProgress 10000
+/run/beamOn 1000000

@@ -1,0 +1,7 @@
+/Users/kuba/Desktop/19F + p/Geant4/build/CMakeFiles/G4_BGO.dir
+/Users/kuba/Desktop/19F + p/Geant4/build/CMakeFiles/edit_cache.dir
+/Users/kuba/Desktop/19F + p/Geant4/build/CMakeFiles/rebuild_cache.dir
+/Users/kuba/Desktop/19F + p/Geant4/build/CMakeFiles/list_install_components.dir
+/Users/kuba/Desktop/19F + p/Geant4/build/CMakeFiles/install.dir
+/Users/kuba/Desktop/19F + p/Geant4/build/CMakeFiles/install/local.dir
+/Users/kuba/Desktop/19F + p/Geant4/build/CMakeFiles/install/strip.dir

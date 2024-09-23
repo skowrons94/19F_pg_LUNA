@@ -1,0 +1,49 @@
+/run/verbose 2
+/Geometry/add BeamLine
+/Geometry/add TargetChamberO17
+/Geometry/add TargetHolder
+/Geometry/add BGODetector
+/Geometry/add LeadShielding
+/Geometry/LeadShielding/setup BGO
+/run/initialize
+/run/setFileName prova.root
+/PrimaryGenerator/select NuclideGun
+/PrimaryGenerator/NuclideGun/mass 15
+/PrimaryGenerator/NuclideGun/charge 8
+/PrimaryGenerator/NuclideGun/position 0 0 3.4990 mm
+/control/execute mac/vis_inventor.mac
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/set/viewpointThetaPhi 90. 180.
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 1
+/vis/scene/notifyHandlers scene-0
+/vis/scene/endOfEventAction accumulate
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/vis/verbose warnings
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector

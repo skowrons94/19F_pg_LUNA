@@ -1,0 +1,27 @@
+// Level data for 14N(p,g)15O
+//
+// Data from NNDC
+//
+
+State 7567
+6792  6172  5241  5180    0
+22.9  57.8   0.6  17.1  1.6
+
+State 6792
+  0
+100
+
+State 6172
+  0
+100
+
+State 5241
+  0
+100
+
+State 5180
+  0
+100
+
+State 0
+end
