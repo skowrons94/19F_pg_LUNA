@@ -17,7 +17,7 @@ This folder contains the astrophysical modeling work, including:
 
 This folder holds Geant4 simulations for the BGO setup at LUNA. Originally developed for proton capture studies on carbon, this simulation has been adapted for the 19F + p reaction. It includes all the necessary code and geometry setups to simulate the detection of gamma rays from the reaction.
 
-### 3. Rate
+### 3. Feasibility
 
 This folder includes calculations relevant to the feasibility study at LUNA:
 
@@ -28,6 +28,6 @@ This folder includes calculations relevant to the feasibility study at LUNA:
 
 This folder contains all presentations made for the working group togheter with the minutes.
 
-### 5. Target
+### 5. Implanted Target
 
-This folder is dedicated to the details and studies of the targets used in the reaction experiments. For now only SRIM calculations for the implantation of 19F in Ta and Fe backings are available.
+This folder is dedicated to the study of the implanted 19F targets, mainly by SRIM calculations.
